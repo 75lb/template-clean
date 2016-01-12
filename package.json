@@ -1,0 +1,24 @@
+{
+  "name": "template-clean",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "template-clean",
+  "repository": "https://github.com/75lb/template-clean.git",
+  "license": "MIT",
+  "main": "./lib/template-clean.js",
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "typical": "^2.4.1"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.3.3",
+    "tape": "^4.4.0"
+  }
+}
