@@ -6,19 +6,17 @@
   "repository": "https://github.com/75lb/template-clean.git",
   "license": "MIT",
   "main": "./lib/template-clean.js",
-  "keywords": [],
+  "keywords": [ "javascript", "template", "template", "string", "literal", "tag", "function", "template string", "clean" ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6"
   },
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "test-runner test/*.js",
     "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
   },
-  "dependencies": {
-    "typical": "^2.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jsdoc-to-markdown": "^1.3.3",
-    "tape": "^4.4.0"
+    "jsdoc-to-markdown": "^3.0.0",
+    "test-runner": "^0.3.0"
   }
 }

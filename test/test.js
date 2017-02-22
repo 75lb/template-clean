@@ -1,8 +1,11 @@
-var test = require('tape')
-var clean = require('../')
+'use strict'
+const TestRunner = require('test-runner')
+const clean = require('../')
+const a = require('assert')
 
-test('clean', function(t){
+const runner = new TestRunner()
+
+runner.test('clean', function(t){
   const data = { one: 1 }
-  t.strictEqual(clean`${data.one}${data.two}${data.three}`, '1')
-  t.end()
+  a.strictEqual(clean`${data.one}${data.two}${data.three}`, '1')
 })
