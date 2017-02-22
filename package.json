@@ -2,7 +2,7 @@
   "name": "template-clean",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.1.0",
-  "description": "template-clean",
+  "description": "Template literal tag function to replace null and undefined values with an empty string",
   "repository": "https://github.com/75lb/template-clean.git",
   "license": "MIT",
   "main": "./lib/template-clean.js",
